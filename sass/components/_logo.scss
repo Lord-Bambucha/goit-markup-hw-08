@@ -1,9 +1,17 @@
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: calc(28px / 24px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo_blue-part {
@@ -11,13 +19,23 @@
 }
 
 .header-logo {
-    margin-right: 93px;
     color: var(--black);
+
+    @media screen and (max-width: 767px) {
+        margin-right: 93px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
 }
 
 .footer-logo {
     color: var(--white);
     display: block;
     margin-bottom: 20px;
-    margin-right: 0;
+
+    @media screen and (max-width: 767px) {
+        // text-align: center;
+    }
 }

@@ -28,38 +28,35 @@
     <header class="header">
         <div class="container header-cont">
             <nav class="nav-cont">
-                <a class="logo header-logo" href="./index.html" lang="en"><span
-                        class="logo_blue-part">Web</span>Studio</a>
+                <a class="logo header-logo" href="./index.html" lang="en"><span class="logo_blue-part">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="./index.html">Студія</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a class="nav-list__link current" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a class="nav-list__link" href="#contacts">Контакти</a>
-                    </li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="./index.html">Студія</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
                 <li class="contact-list__item">
-                    <a class="nav-contacts" href="mailto:info@devstudio.com">
-                        <svg class="nav-contacts__icon" width="16" height="12">
+                    <a class="contact-list__contact" href="mailto:info@devstudio.com">
+                        <svg class="contact-list__icon contact-list__icon-email" width="16" height="12">
                             <use href="./img/sprite.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li class="contact-list__item">
-                    <a class="nav-contacts" href="tel:+380961111111">
-                        <svg class="nav-contacts__icon" width="10" height="16">
+                    <a class="contact-list__contact" href="tel:+380961111111">
+                        <svg class="contact-list__icon contact-list__icon-tell" width="10" height="16">
                             <use href="./img/sprite.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+            <button class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-btn__icon" width="40" height="40" aria-label="open the mobile menu">
+                    <use href="./img/sprite.svg#menu_btn"></use>
+                </svg>
         </div>
     </header>
 
@@ -90,7 +87,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img.jpg" alt="сторінка веб-сайту" Width="370" Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-1-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-1@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-1-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-1@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-1-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-1@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-1-min.jpg" alt="сторінка веб-сайту Технокряк">
+                                </picture>                                
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -106,8 +122,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-1.jpg" alt="постер з двома баскетболістами" Width="370"
-                                    Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-2-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-2@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-2-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-2@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-2-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-2@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-2-min.jpg" alt="постер з двома баскетболістами">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus illum nisi. Illum corporis iste, mollitia quasi sit in
@@ -124,7 +158,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-2.jpg" alt="реклама ресторану" Width="370" Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-3-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-3@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-3-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-3@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-3-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-3@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-3-min.jpg" alt="реклама ресторану">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -140,7 +193,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-3.jpg" alt="фото невушників" Width="370" Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-4-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-4@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-4-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-4@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-4-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-4@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-4-min.jpg" alt="фото невушників">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -156,7 +228,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-4.jpg" alt="фото коробок" Width="370" Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-5-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-5@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-5-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-5@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-5-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-5@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-5-min.jpg" alt="фото коробок">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -172,8 +263,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-5.jpg" alt="монітор з відкритим веб-сайтом" Width="370"
-                                    Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-6-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-6@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-6-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-6@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-6-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-6@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-6-min.jpg" alt="монітор з відкритим веб-сайтом">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -189,7 +298,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-6.jpg" alt="розгорнута книжка" Width="370" Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-7-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-7@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-7-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-7@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-7-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-7@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-7-min.jpg" alt="розгорнута книжка">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -205,8 +333,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-7.jpg" alt="фото етикетки з рекламою" Width="370"
-                                    Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-8-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-8@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-8-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-8@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-8-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-8@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-8-min.jpg" alt="фото етикетки з рекламою">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -222,8 +368,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
-                                <img src="./img/portfolio/img-8.jpg" alt="ноутбук з відкритою програмою" Width="370"
-                                    Height="294">
+                                <picture>                           
+                                    <source
+                                    srcset="./img/portfolio/img-desktop/img-desktop-9-min.jpg,
+                                            ./img/portfolio/img-desktop/img-desktop-9@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-tablet/img-tablet-9-min.jpg,
+                                            ./img/portfolio/img-tablet/img-tablet-9@2x-min.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    />
+
+                                    <source
+                                    srcset="./img/portfolio/img-mobile/img-mobile-9-min.jpg,
+                                            ./img/portfolio/img-mobile/img-mobile-9@2x-min.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./img/portfolio/img-mobile/img-mobile-9-min.jpg" alt="ноутбук з відкритою програмою">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-item__about">Lorem ipsum dolor sit amet consectetur, adipisicing
                                         elit. Totam sed doloribus
@@ -321,6 +485,57 @@
             </div>
         </div>
     </footer>
+
+
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="modal-close-btn__icon" width="40" height="40" aria-label="close the mobile menu">
+                <use href="./img/sprite.svg#menu_btn-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-list__item"><a class="mobile-nav-list__link current" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-nav-list__item"><a class="mobile-nav-list__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-nav-list__item"><a class="mobile-nav-list__link" href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="mobile-contact-list">
+            <li class="mobile-contact-list__item">
+                <a class="mobile-contact-list__num" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="mobile-contact-list__item">
+                <a class="mobile-contact-list__email" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__social-links-list">
+            <li class="mobile-menu__social-links-item">
+                <a class="mobile-menu__social-links-link" href="https://www.instagram.com/" target="_blank"
+                    rel="noreferrer noopener">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-links-item">
+                <a class="mobile-menu__social-links-link" href="https://twitter.com" target="_blank"
+                    rel="noreferrer noopener">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-links-item">
+                <a class="mobile-menu__social-links-link" href="https://www.facebook.com/" target="_blank"
+                    rel="noreferrer noopener">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-links-item">
+                <a class="mobile-menu__social-links-link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noreferrer noopener">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
