@@ -20,7 +20,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
     padding: 40px;
 
     background-color: #fff;
@@ -33,7 +32,12 @@
         transform: translate(-50%, -50%) scale(0.7);
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 450px;
     }
 
@@ -188,10 +192,18 @@
     margin-top: 20px;
     margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: calc(14px/12px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .contact-form__checkbox-field a {

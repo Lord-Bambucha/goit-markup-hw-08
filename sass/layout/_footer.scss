@@ -159,6 +159,7 @@
 
 .subscription-form__field {
     position: relative;
+    width: 100%;
 
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
@@ -170,7 +171,6 @@
 }
 
 .subscription-form__input {
-
     height: 50px;
     padding: 16px 15px;
 
@@ -185,7 +185,12 @@
         border-color: var(--blue);
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 450px;
     }
 
@@ -208,11 +213,11 @@
 
     @media screen and (max-width: 1199px) {
         .subscription-form__field:focus-within>& {
-            transform: translateY(-50px);
+            transform: translateY(-46px);
         }
 
         .subscription-form__input:not(:placeholder-shown)+& {
-            transform: translateY(-50px);
+            transform: translateY(-46px);
         }
     }
 

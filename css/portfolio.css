@@ -21,6 +21,10 @@ body {
   color: var(--main-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -139,14 +143,14 @@ a {
 .header-logo {
   color: var(--black);
 }
-@media screen and (max-width: 767px) {
-  .header-logo {
-    margin-right: 93px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-logo {
     margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
   }
 }
 
@@ -808,6 +812,7 @@ a {
 
 .subscription-form__field {
   position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 1199px) {
   .subscription-form__field {
@@ -835,7 +840,13 @@ a {
   outline: none;
   border-color: var(--blue);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .subscription-form__input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscription-form__input {
     width: 450px;
   }
@@ -862,18 +873,18 @@ a {
 }
 @media screen and (max-width: 1199px) {
   .subscription-form__field:focus-within > .subscription-form__label {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-46px);
+            transform: translateY(-46px);
   }
   .subscription-form__input:not(:-moz-placeholder-shown) + .subscription-form__label {
-    transform: translateY(-50px);
+    transform: translateY(-46px);
   }
   .subscription-form__input:not(:-ms-input-placeholder) + .subscription-form__label {
-    transform: translateY(-50px);
+    transform: translateY(-46px);
   }
   .subscription-form__input:not(:placeholder-shown) + .subscription-form__label {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-46px);
+            transform: translateY(-46px);
   }
 }
 @media screen and (min-width: 1200px) {

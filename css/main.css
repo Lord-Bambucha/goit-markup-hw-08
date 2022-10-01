@@ -21,6 +21,10 @@ body {
   color: var(--main-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -139,14 +143,14 @@ a {
 .header-logo {
   color: var(--black);
 }
-@media screen and (max-width: 767px) {
-  .header-logo {
-    margin-right: 93px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-logo {
     margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
   }
 }
 
@@ -213,7 +217,13 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(0.7);
           transform: translate(-50%, -50%) scale(0.7);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }
@@ -363,10 +373,20 @@ a {
           justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey);
+}
+@media screen and (max-width: 1199px) {
+  .contact-form__checkbox-field {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__checkbox-field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .contact-form__checkbox-field a {
@@ -765,7 +785,7 @@ a {
 }
 @media screen and (max-width: 1199px) {
   .hero {
-    padding: 181px 0;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -798,7 +818,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .hero-cont {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero-cont {
     width: 360px;
   }
@@ -1293,6 +1318,7 @@ a {
 
 .subscription-form__field {
   position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 1199px) {
   .subscription-form__field {
@@ -1320,7 +1346,13 @@ a {
   outline: none;
   border-color: var(--blue);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .subscription-form__input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscription-form__input {
     width: 450px;
   }
@@ -1347,18 +1379,18 @@ a {
 }
 @media screen and (max-width: 1199px) {
   .subscription-form__field:focus-within > .subscription-form__label {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-46px);
+            transform: translateY(-46px);
   }
   .subscription-form__input:not(:-moz-placeholder-shown) + .subscription-form__label {
-    transform: translateY(-50px);
+    transform: translateY(-46px);
   }
   .subscription-form__input:not(:-ms-input-placeholder) + .subscription-form__label {
-    transform: translateY(-50px);
+    transform: translateY(-46px);
   }
   .subscription-form__input:not(:placeholder-shown) + .subscription-form__label {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-46px);
+            transform: translateY(-46px);
   }
 }
 @media screen and (min-width: 1200px) {
