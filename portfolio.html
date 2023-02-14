@@ -66,25 +66,25 @@
                 <h1 class="visually-hidden">Приклади наших робіт</h1>
                 <ul class="filters-list">
                     <li class="filters-list__item">
-                        <button class="btn-filters" type="button">Все</button>
+                        <button class="btn-filters js-btn-filters js-btn-active" type="button" data-filter="all">Все</button>
                     </li>
                     <li class="filters-list__item">
-                        <button class="btn-filters" type="button">Веб-сайти</button>
+                        <button class="btn-filters js-btn-filters" type="button" data-filter="websites">Веб-сайти</button>
                     </li>
                     <li class="filters-list__item">
-                        <button class="btn-filters" type="button">Додатки</button>
+                        <button class="btn-filters js-btn-filters" type="button" data-filter="applications">Додатки</button>
                     </li>
                     <li class="filters-list__item">
-                        <button class="btn-filters" type="button">Дизайн</button>
+                        <button class="btn-filters js-btn-filters" type="button" data-filter="design">Дизайн</button>
                     </li>
                     <li class="filters-list__item">
-                        <button class="btn-filters" type="button">Маркетинг</button>
+                        <button class="btn-filters js-btn-filters" type="button" data-filter="marketing">Маркетинг</button>
                     </li>
                 </ul>
 
                 <ul class="portfolio">
 
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="websites">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -119,7 +119,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="design">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -155,7 +155,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="applications">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -190,7 +190,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="marketing">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -225,7 +225,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="applications">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -260,7 +260,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="websites">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -295,7 +295,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="design">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -330,7 +330,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="marketing">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -365,7 +365,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item" data-filter="applications">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio-thumb">
                                 <picture>                           
@@ -534,10 +534,10 @@
             </li>
         </ul>
     </div>
-    
-    
-    <script src="./js/mobile-menu.js"></script>
 
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter-gallery.js" type="module"></script>
+    
 </body>
 
 </html>
