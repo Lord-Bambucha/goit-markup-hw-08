@@ -17,10 +17,6 @@
     }
 }
 
-// .filters-list__item+.filters-list__item {
-//     margin-left: 8px;
-// }
-
 .btn-filters {
     padding: 6px 22px 6px 22px;
 
@@ -125,12 +121,13 @@
         width: calc((100% - 2 * 30px) / 3);
     }
 
+    // для експерменту альтернатива для width: calc((100% - 2 * 30px) / 3);
     // flex-basis: calc((100% - 60px) / 3);
 
+    // для експерменту альтернатива для gap: 30px;
     // &:not(:nth-child(3n)) {
     //     margin-right: 30px;
     // }
-
     // &:not(:nth-last-child(-n+3)) {
     //     margin-bottom: 30px;
     // }

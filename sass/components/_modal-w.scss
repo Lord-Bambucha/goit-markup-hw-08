@@ -78,7 +78,7 @@
 
 .contact-form__title {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
     text-align: center;
 
     font-weight: 700;
@@ -93,7 +93,7 @@
     position: relative;
 
     &+& {
-        margin-top: 10px;
+        margin-top: 28px;
     }
 }
 
@@ -119,23 +119,27 @@
 }
 
 .contact-form__label {
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 42px;
-    transform: translateY(-50%); */
+    transform: translateY(-50%);
     display: block;
-    margin-bottom: 4px;
 
     font-size: 12px;
     line-height: 1, 17;
     letter-spacing: 0.01em;
     color: var(--grey);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .contact-form__field:focus-within>& {
-        /* transform: translate(-12px, -38px); */
+        transform: translate(-12px, -38px);
         color: var(--blue);
     }
+}
+
+.contact-form__input:not(:placeholder-shown)+.contact-form__label,
+.contact-form__message:not(:placeholder-shown)+.contact-form__label {
+    transform: translate(-12px, -38px);
 }
 
 .contact-form__icon {
@@ -149,11 +153,6 @@
         fill: var(--blue);
     }
 }
-
-/* .contact-form__input:not(:placeholder-shown)+.contact-form__label,
-.contact-form__message:not(:placeholder-shown)+.contact-form__label{
-    transform: translate(-12px, -38px);
-} */
 
 .contact-form__message {
     width: 100%;
@@ -179,9 +178,9 @@
 }
 
 .contact-form__label-message {
-    /* top: 22px;
+    top: 22px;
     left: 42px;
-    transform: translateY(-50%); */
+    transform: translateY(-50%);
     margin-bottom: 4px;
 }
 

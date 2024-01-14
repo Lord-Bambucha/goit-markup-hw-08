@@ -4,7 +4,6 @@
 }
 
 .footer-container {
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -14,11 +13,6 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         justify-content: space-evenly;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    //     align-items: baseline;
-    // }
 }
 
 .addr-item+.addr-item {
@@ -67,7 +61,6 @@
         color: var(--blue);
     }
 }
-
 
 
 .footer-social-links-cont {
@@ -129,8 +122,6 @@
 .footer-social-links__icon {
     fill: var(--white);
 }
-
-
 
 
 
@@ -231,7 +222,6 @@
         }
     }
 }
-
 
 .subscription-form__button {
     display: flex;
