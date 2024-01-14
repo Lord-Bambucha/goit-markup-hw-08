@@ -234,6 +234,17 @@ a {
     width: 528px;
   }
 }
+@media screen and (orientation: landscape) {
+  .modal {
+    top: 10%;
+    -webkit-transform: translate(-50%, 0) scale(1);
+            transform: translate(-50%, 0) scale(1);
+  }
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, 0) scale(0.7);
+            transform: translate(-50%, 0) scale(0.7);
+  }
+}
 
 .modal-close-btn {
   position: absolute;
