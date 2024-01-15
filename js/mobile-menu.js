@@ -11,7 +11,7 @@ const toggleMenu = () => {
   document.body.classList.toggle("modal-open");
   mobileMenu.classList.toggle('is-open');
 
-  // trcgthvtynedfd для бібліотеки body-scroll-lock
+  // експерментував для бібліотеки body-scroll-lock
   // const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
   // bodyScrollLock[scrollLockMethod](document.body);
 };
