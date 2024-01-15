@@ -30,7 +30,7 @@
                 <ul class="nav-list">
                     <li class="nav-list__item"><a class="nav-list__link" href="./index.html">Студія</a></li>
                     <li class="nav-list__item"><a class="nav-list__link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакти</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link js-nav" data-nav_go_to="#contacts" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
@@ -409,7 +409,7 @@
                 </li>
                 <li class="mobile-nav-list__item"><a class="mobile-nav-list__link" href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li class="mobile-nav-list__item"><a class="mobile-nav-list__link" href="#contacts">Контакти</a></li>
+                <li class="mobile-nav-list__item"><a class="mobile-nav-list__link js-nav" href="#">Контакти</a></li>
             </ul>
         </nav>
         <ul class="mobile-contact-list">
@@ -440,8 +440,9 @@
         </ul>
     </div>
 
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/filter-gallery.js" type="module"></script>
+    <script src="./js/pageNav.js" type="module"></script>
 
 </body>
 
